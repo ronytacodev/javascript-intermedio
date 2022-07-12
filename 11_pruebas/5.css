@@ -1,0 +1,39 @@
+/* css para el primer botón buscar */
+.btnBuscar{
+    display: inline;
+    width: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    background-color: hwb(46 15% 5% / 0.993);
+    border-radius: 70px;
+    padding: 12px 15px;
+    margin: 0px 10px;
+    color: rgb(71, 70, 70);
+    text-decoration: none;
+}
+
+.btnBuscar:hover{
+    background-color: rgb(88, 86, 86);
+    border: 1px solid rgb(47, 48, 44);
+    color: white;
+}
+
+/* css para el segundo botón actualizar */
+.btnActualizar{
+    display: inline-flex;
+    width: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    background-color: hwb(46 15% 5% / 0.993);
+    border-radius: 70px;
+    padding: 12px 15px;
+    margin: 100px 10px;
+    color: rgb(71, 70, 70);
+    text-decoration: none;
+}
+
+.btnActualizar:hover{
+    background-color: rgb(88, 86, 86);
+    border: 2px solid rgb(104, 112, 26);
+    color: white;
+}
