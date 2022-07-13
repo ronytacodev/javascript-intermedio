@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/*style the header*/
+header{
+    background-color: #7A4069;
+    padding: 10px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
+/*Create two columns next to each other*/
+nav{
+    background: #FFC18E;
+    padding: 20px;
+    float: left;
+    width: 30%;
+}
+
+/*Styling the list inside the menu*/
+nav ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+article{
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: #B7D3DF;
+}
