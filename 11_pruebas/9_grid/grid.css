@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@100&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    font-family: 'Public Sans', sans-serif;
+    font-size: 1.2em;
+    min-height: 100%;
+}
+
+.grid-container > * {
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: -1px 1px 7px 0px #ECB390;
+}
+
+/*asignando area a cada sección*/
+
+.header{
+    grid-area: header;
+    background-color:#D9F8C4 ;
+}
+
+.navbar{
+    grid-area: navbar;
+    background-color:#CEE5D0 ;
+}
+
+.sidebar{
+    grid-area: sidebar;
+    background-color: #FAD9A1;
+}
+
+.main{
+    grid-area: main;
+    background-color: #B2C8DF;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: #66BFBF;
+}
+
+/*aca termino de asignar las áreas tipo grid*/
+
+/*mobile first*/
+.grid-container{
+    display: grid;
+    gap: 10px;
+    grid-template: 
+        "header" 100px
+        "navbar" 50px
+        "main"   auto
+        "sidebar"  100px
+        "footer"  100px;
+
+}
+
+/*responsive design para tablet*/
+@media (min-width: 600px) {
+    .grid-container{
+        grid-template: 
+        "header header" 100px
+        "navbar navbar" 50px
+        "sidebar main"  auto
+        "footer footer" 100px /
+        200px    auto;
+    }
+}
+
+/*responsive design para desktop*/
+@media (min-width: 900px) {
+    .grid-container{
+        grid-template: 
+        "header header header" 100px
+        "navbar main sidebar" auto
+        "footer footer footer" 100px /
+        200px    auto    200px;
+    }
+}
+
