@@ -35,3 +35,54 @@ body{
     "sidebar" 100px
     "footer" 100px;
 }
+
+/*Asignando áreas de grid */
+.header{
+    grid-area: header;
+    background-color: #94B49F;
+}
+
+.navbar{
+    grid-area: navbar;
+    background-color: #CEE5D0;
+}
+
+.main{
+    grid-area: main;
+    background-color: #FCF8E8;
+}
+
+.sidebar{
+    grid-area: sidebar;
+    background-color: #ECB390;
+}
+
+.footer{
+    grid-area: footer;
+}
+
+/*tablet responsive*/
+@media (min-width:600px){
+    .grid-container{
+        grid-template: 
+        "header header" 100px
+        "navbar navbar" 50px
+        "sidebar main"  auto
+        "footer footer" 100px  /
+        200px   auto;
+    }
+}
+
+/*desktop responsive*/
+@media (min-width:900px) {
+    .grid-container{
+        grid-template:
+         "header  header header" 100px
+         "navbar  main   sidebar" auto
+         "footer footer  footer" 100px /
+          200px   auto   200px ;
+    }
+}
+
+
+
