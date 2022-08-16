@@ -15,7 +15,7 @@ const recortarTexto = (cadena = "", longitud = undefined) =>
 // recortarTexto("Hola Hola");
 // recortarTexto("", 5);
 
-
+//****************************************************** */
 //Curso JavaScript: 35. Ejercicios de Lógica de Programación ( 2 / 10 ) - #jonmircha
 //apartir del min 20 fecha 15/08/22
 
@@ -28,8 +28,32 @@ const cadenaAArreglo = (cadena="", separador=undefined)=>
 ?console.warn("No ingresaste el caracter separador")
 :console.info(cadena.split(separador));
 
-cadenaAArreglo("Lorem ipsum dolor sit amet consectetur adipisicing elit. A maiores minus libero in omnis perspiciatis facere, officia architecto, inventore explicabo velit tempora impedit, distinctio aspernatur mollitia quibusdam sit dicta. Praesentium", " ");
-cadenaAArreglo();
-cadenaAArreglo("Hola mundo");
-cadenaAArreglo(""," ");
+// cadenaAArreglo("Lorem ipsum dolor sit amet consectetur adipisicing elit. A maiores minus libero in omnis perspiciatis facere, officia architecto, inventore explicabo velit tempora impedit, distinctio aspernatur mollitia quibusdam sit dicta. Praesentium", " ");
+// cadenaAArreglo();
+// cadenaAArreglo("Hola mundo");
+// cadenaAArreglo(""," ");
+
+//****************************************************** */
+//Curso JavaScript: 35. Ejercicios de Lógica de Programación ( 2 / 10 ) - #jonmircha
+//apartir del min 27 fecha 15/08/22
+// 4) Programa una función que repita un texto X veces, pe. miFuncion('Hola Mundo', 3) devolverá Hola Mundo Hola Mundo Hola Mundo.
+
+const repetirTexto = (texto="", veces=undefined)=>{
+    if(!texto) return console.warn("No ingresaste un texto");
+
+    if(veces===undefined) return console.warn("No ingresaste el número de veces a repetir el texto");
+
+    if(veces===0) return console.error("El número de veces no puede ser 0");
+
+    if(Math.sign(veces)===-1) return console.error("El número de veces no puede ser negativo");
+
+    for (let i=1; i<=veces; i++) console.info(`${texto}, ${i}`);
+}
+
+repetirTexto("Hola mundo", 3);
+repetirTexto("Hola mundo", 0);
+repetirTexto("Hola mundo", -20);
+repetirTexto("", 20);
+repetirTexto("Hola mundo");
+
 
