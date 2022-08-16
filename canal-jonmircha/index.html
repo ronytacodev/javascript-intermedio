@@ -20,13 +20,32 @@
         <p>EJERCICIO NRO 1</p>
         <P>Programa una función que cuente el número de caracteres de una cadena de texto, pe. miFuncion("Hola Mundo")
             devolverá 10.</P>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A maiores minus libero in omnis perspiciatis facere,
+            officia architecto, inventore explicabo velit tempora impedit, distinctio aspernatur mollitia quibusdam sit
+            dicta. Praesentium?</p>
     </section>
     <script>
         const contarCaracteres = (cadena = "") =>
             (!cadena) ? console.warn("no ingresaste ninguna cadena") : console.info(`La cadena "${cadena}" tiene ${cadena.length} caracteres`);
 
-        contarCaracteres();
-        contarCaracteres("Hola mundo");
+        // contarCaracteres();
+        // contarCaracteres("Hola mundo");
+
+
+        //Curso JavaScript: 35. Ejercicios de Lógica de Programación ( 2 / 10 ) - #jonmircha
+        //apartir del min 20 fecha 15/08/22
+
+        // 3) Programa una función que dada una String te devuelva un Array de textos separados por cierto caracter, pe. miFuncion('hola que tal', ' ') devolverá ['hola', 'que', 'tal']
+
+        const cadenaAArreglo = (cadena = "", separador = undefined) =>
+            (!cadena)
+                ? console.warn("No ingresaste una cadena de texto")
+                : (separador === undefined)
+                    ? console.warn("No ingresaste el caracter separador")
+                    : console.info(cadena.split(separador));
+
+        cadenaAArreglo("Lorem ipsum dolor sit amet consectetur adipisicing elit. A maiores minus libero in omnis perspiciatis facere, officia architecto, inventore explicabo velit tempora impedit, distinctio aspernatur mollitia quibusdam sit dicta. Praesentium", "");
+
     </script>
 
 
