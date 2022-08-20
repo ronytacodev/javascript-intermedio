@@ -188,10 +188,10 @@ const factorial = (numero = undefined) => {
     return console.info(`El factorial de ${numero} es ${factorial}`);
 }
 
-factorial();
-factorial("5");
-factorial([1,2,3]);
-factorial(0);
-factorial(-5);
-factorial(5);
-factorial(8);
+// factorial();
+// factorial("5");
+// factorial([1,2,3]);
+// factorial(0);
+// factorial(-5);
+// factorial(5);
+// factorial(8);
