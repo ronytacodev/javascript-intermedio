@@ -278,13 +278,48 @@ const convertirGrados = (grados = undefined, unidad = undefined) => {
 
 }
 
-convertirGrados();
-convertirGrados("2");
-convertirGrados(2);
-convertirGrados(2, true);
-convertirGrados(2, "Hola");
-convertirGrados(2, "E");
-convertirGrados(0, "C");
-convertirGrados(100, "C");
-convertirGrados(32, "F");
-convertirGrados(100, "F");
+// convertirGrados();
+// convertirGrados("2");
+// convertirGrados(2);
+// convertirGrados(2, true);
+// convertirGrados(2, "Hola");
+// convertirGrados(2, "E");
+// convertirGrados(0, "C");
+// convertirGrados(100, "C");
+// convertirGrados(32, "F");
+// convertirGrados(100, "F");
+
+
+// 15) Programa una función para convertir números de base binaria a decimal y viceversa, pe. miFuncion(100,2) devolverá 4 base 10.
+//Curso JavaScript: 39. Ejercicios de Lógica de Programación ( 6 / 10 ) 26/08/22 hasta el min 12
+
+const convertirBinarioDecimal = (numero = undefined, base = undefined) => {
+    if (numero === undefined) return console.warn("No ingresaste el número a convertir");
+
+    if (typeof numero !== "number") return console.error(`El valor "${numero}" ingresado, NO es un número`);
+
+    if (base === undefined) return console.warn("No ingresaste la base a convertir");
+
+    if (typeof base !== "number") return console.error(`El valor "${base}" ingresado, NO es un númer○`);
+
+    if (base === 2){
+        return console.info(`${numero} base ${base} = ${parseInt(numero, base)} base 10`);
+    } else if (base === 10) {
+        return console.info(`${numero} base ${base} = ${(numero.toString(2))} base 2`);
+    } else {
+        return console.error("El tipo de base a convertir NO es válido");
+    }
+}
+
+convertirBinarioDecimal();
+convertirBinarioDecimal("2");
+convertirBinarioDecimal(100);
+convertirBinarioDecimal(100, "2");
+convertirBinarioDecimal(100, 2);
+convertirBinarioDecimal(4, 10);
+convertirBinarioDecimal(114, 10);
+
+
+
+// 16) Programa una función que devuelva el monto final después de aplicar un descuento a una cantidad dada, pe. miFuncion(1000, 20) devolverá 800.
+// 17) Programa una función que dada una fecha válida determine cuantos años han pasado hasta el día de hoy, pe. miFuncion(new Date(1984,4,23)) devolverá 35 años (en 2020).
