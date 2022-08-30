@@ -353,7 +353,7 @@ const aplicarDescuento = (monto = undefined, descuento = 0) => {
 // 17) Programa una función que dada una fecha válida determine cuantos años han pasado hasta el día de hoy, pe. miFuncion(new Date(1984,4,23)) devolverá 35 años (en 2020).
 
 //Curso JavaScript: 39. Ejercicios de Lógica de Programación ( 6 / 10 ) 27/08/22 hasta el min 36
-//Curso JavaScript: 39. Ejercicios de Lógica de Programación ( 6 / 10 ) 28/08/22 hasta el final
+//Curso JavaScript: 39. Ejercicios de Lógica de Programación ( 6 / 10 ) 29/08/22 hasta el final
 
 const calcularYears = (fecha = undefined) => {
     if (fecha === undefined) return console.warn("No ingresaste la fecha");
@@ -371,10 +371,15 @@ const calcularYears = (fecha = undefined) => {
     :console.info(`Estamos en el año actual ${fecha.getFullYear()}.`)
 }
 
-calcularYears();
-calcularYears({});
-calcularYears(false);
-calcularYears(new Date());
-calcularYears(new Date(1984, 4, 23));
-calcularYears(new Date(1884, 4, 23));
-calcularYears(new Date(2084, 4, 23));
+// calcularYears();
+// calcularYears({});
+// calcularYears(false);
+// calcularYears(new Date());
+// calcularYears(new Date(1984, 4, 23));
+// calcularYears(new Date(1884, 4, 23));
+// calcularYears(new Date(2084, 4, 23));
+
+
+// 18) Programa una función que dada una cadena de texto cuente el número de vocales y consonantes, pe. miFuncion("Hola Mundo") devuelva Vocales: 4, Consonantes: 5.
+// 19) Programa una función que valide que un texto sea un nombre válido, pe. miFuncion("Jonathan MirCha") devolverá verdadero.
+// 20) Programa una función que valide que un texto sea un email válido, pe. miFuncion("jonmircha@gmail.com") devolverá verdadero.
