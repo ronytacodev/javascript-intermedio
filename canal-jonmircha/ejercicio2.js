@@ -353,13 +353,28 @@ const aplicarDescuento = (monto = undefined, descuento = 0) => {
 // 17) Programa una función que dada una fecha válida determine cuantos años han pasado hasta el día de hoy, pe. miFuncion(new Date(1984,4,23)) devolverá 35 años (en 2020).
 
 //Curso JavaScript: 39. Ejercicios de Lógica de Programación ( 6 / 10 ) 27/08/22 hasta el min 36
+//Curso JavaScript: 39. Ejercicios de Lógica de Programación ( 6 / 10 ) 28/08/22 hasta el final
 
 const calcularYears = (fecha = undefined) => {
     if (fecha === undefined) return console.warn("No ingresaste la fecha");
 
-    if (fecha instanceof Date) return console.error("El valor que ingresaste no es una fecha válida");
+    if (!(fecha instanceof Date)) return console.error("El valor que ingresaste no es una fecha válida");
 
     let hoyMenosFecha = new Date().getTime() - fecha.getTime(),
     yearsenMS = 1000*60*60*24*365
     yearsHumanos = Math.floor(hoyMenosFecha / yearsenMS); 
+
+    return (Math.sign(yearsHumanos)=== -1)
+    ?console.info(`Faltan ${Math.abs(yearsHumanos)} años para el ${fecha.getFullYear()}.`)
+    :(Math.sign(yearsHumanos) === 1)
+    ?console.info(`Han pasado ${yearsHumanos} años, desde ${fecha.getFullYear()}.`)
+    :console.info(`Estamos en el año actual ${fecha.getFullYear()}.`)
 }
+
+calcularYears();
+calcularYears({});
+calcularYears(false);
+calcularYears(new Date());
+calcularYears(new Date(1984, 4, 23));
+calcularYears(new Date(1884, 4, 23));
+calcularYears(new Date(2084, 4, 23));
