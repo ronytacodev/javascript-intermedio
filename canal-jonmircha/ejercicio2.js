@@ -381,7 +381,7 @@ const calcularYears = (fecha = undefined) => {
 
 
 // 18) Programa una función que dada una cadena de texto cuente el número de vocales y consonantes, pe. miFuncion("Hola Mundo") devuelva Vocales: 4, Consonantes: 5.
-//Curso JavaScript: 40. Ejercicios de Lógica de Programación ( 7 / 10 ) 30/08/22
+//Curso JavaScript: 40. Ejercicios de Lógica de Programación ( 7 / 10 ) 30/08/22 hasta el min 13
 
 const contarLetras = (cadena = "") => {
     if(!cadena) return console.warn("No ingresaste una cadena de texto");
@@ -414,6 +414,44 @@ const contarLetras = (cadena = "") => {
 // contarLetras("Noño");
 
 
-
 // 19) Programa una función que valide que un texto sea un nombre válido, pe. miFuncion("Jonathan MirCha") devolverá verdadero.
+//Curso JavaScript: 40. Ejercicios de Lógica de Programación ( 7 / 10 ) 30/08/22 hasta el min 19
+
+const validarNombre = (nombre = "") => {
+    if (!nombre) return console.warn("No ingresaste un nombre");
+
+    if (typeof nombre !== "string") return console.error(`El valor "${nombre}" ingresado, NO es una cadena de texto`);
+
+    let expReg = /^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$/g.test(nombre);
+
+    return (expReg)
+    ?console.info(`"${nombre}", es un nombre válido`)
+    :console.warn(`"${nombre}", NO es un nombre válido`);
+
+}
+
+// validarNombre();
+// validarNombre(3);
+// validarNombre("Neron kitin");
+// validarNombre("Neron kitin,19");
+
 // 20) Programa una función que valide que un texto sea un email válido, pe. miFuncion("jonmircha@gmail.com") devolverá verdadero.
+//Curso JavaScript: 40. Ejercicios de Lógica de Programación ( 7 / 10 ) 30/08/22 hasta el final
+
+const validarEmail = (email = "") => {
+    if (!email) return console.warn("No ingresaste un email");
+
+    if (typeof email !== "string") return console.error(`El valor "${email}" ingresado, NO es una cadena de texto`);
+
+    let expReg = /[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})/i.test(email);
+    
+
+    return (expReg)
+    ?console.info(`"${email}", es un email válido`)
+    :console.warn(`"${email}", NO es un email válido`);
+}
+
+validarEmail();
+validarEmail(34);
+validarEmail("hercules,ner,on@gmail");
+validarEmail("hercules.neron@gmail.com");
