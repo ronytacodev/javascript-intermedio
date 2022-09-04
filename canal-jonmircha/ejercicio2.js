@@ -836,3 +836,7 @@ const misPelis = [
 // }, 1000);
 
 // clearInterval(temporizador);
+
+// Curso JavaScript: 45. Asincronía y el Event Loop 04/09/22 teoria 
+
+// Curso JavaScript: 46. Callbacks 04/09/22 teoria
