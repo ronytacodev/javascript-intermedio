@@ -931,29 +931,44 @@ function cuadradoPromise(value) {
 
 // funcionAsincronaDeclarada();
 
-const funcionAsincronaExpresada = async () => {
-    try {
-        console.log("Inicio Async Function");
+// const funcionAsincronaExpresada = async () => {
+//     try {
+//         console.log("Inicio Async Function");
 
-        let obj = await cuadradoPromise(0);
-        console.log(`Async Function: ${obj.value}, ${obj.result}`);
+//         let obj = await cuadradoPromise(0);
+//         console.log(`Async Function: ${obj.value}, ${obj.result}`);
 
-        obj = await cuadradoPromise(1);
-        console.log(`Async Function: ${obj.value}, ${obj.result}`);
+//         obj = await cuadradoPromise(1);
+//         console.log(`Async Function: ${obj.value}, ${obj.result}`);
 
-        obj = await cuadradoPromise("2");
-        console.log(`Async Function: ${obj.value}, ${obj.result}`);
+//         obj = await cuadradoPromise("2");
+//         console.log(`Async Function: ${obj.value}, ${obj.result}`);
 
-        obj = await cuadradoPromise(3);
-        console.log(`Async Function: ${obj.value}, ${obj.result}`);
+//         obj = await cuadradoPromise(3);
+//         console.log(`Async Function: ${obj.value}, ${obj.result}`);
 
-        obj = await cuadradoPromise(4);
-        console.log(`Async Function: ${obj.value}, ${obj.result}`);
+//         obj = await cuadradoPromise(4);
+//         console.log(`Async Function: ${obj.value}, ${obj.result}`);
 
-        console.log("Fin Async Function");
-    } catch (err) {
-        console.error(err)
-    }   
+//         console.log("Fin Async Function");
+//     } catch (err) {
+//         console.error(err)
+//     }   
+// }
+
+// funcionAsincronaExpresada();
+
+//******************************************** */
+
+// Curso JavaScript: 49. Symbols 05/09/22
+
+const NOMBRE = Symbol();
+
+const persona = {
+    [NOMBRE]: "Jon"
 }
 
-funcionAsincronaExpresada();
+console.log(persona);
+
+persona.NOMBRE = "Rony Taco"
+console.log(persona);
