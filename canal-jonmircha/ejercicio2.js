@@ -962,13 +962,23 @@ function cuadradoPromise(value) {
 
 // Curso JavaScript: 49. Symbols 05/09/22
 
-const NOMBRE = Symbol();
+// const NOMBRE = Symbol();
 
 const persona = {
     [NOMBRE]: "Jon"
 }
 
-console.log(persona);
+// console.log(persona);
 
-persona.NOMBRE = "Rony Taco"
-console.log(persona);
+// persona.NOMBRE = "Rony Taco"
+// console.log(persona);
+
+//******************************************** */
+// Curso JavaScript: 50. Sets  05/09/22
+
+// Curso JavaScript: 51. Maps  05/09/22
+
+// Curso JavaScript: 52. WeakSets & WeakMaps  05/09/22
+
+//Curso JavaScript: 53. Iterables & Iterators 05/09/22
+
