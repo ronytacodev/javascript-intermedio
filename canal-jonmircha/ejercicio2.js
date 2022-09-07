@@ -984,3 +984,8 @@ const persona = {
 
 //Curso JavaScript: 54. Generators 06/09/22
 
+// Curso JavaScript: 55. Proxies 06/09/22
+
+//Curso JavaScript: 56. Propiedades Dinámicas de los Objetos 06/09/22
+
+//Curso JavaScript: 57. this - 06/09/22
