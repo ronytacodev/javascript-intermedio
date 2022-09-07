@@ -982,3 +982,5 @@ const persona = {
 
 //Curso JavaScript: 53. Iterables & Iterators 05/09/22
 
+//Curso JavaScript: 54. Generators 06/09/22
+
