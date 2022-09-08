@@ -993,3 +993,7 @@ const persona = {
 //Curso JavaScript: 58. call, apply, bind 06/09/22
 
 //Curso JavaScript: 59. JSON 07/09/22
+
+//Curso JavaScript: 60. WEB APIs 07/09/22
+
+//Curso JavaScript: 61. DOM: Introducción 07/09/22
