@@ -997,3 +997,7 @@ const persona = {
 //Curso JavaScript: 60. WEB APIs 07/09/22
 
 //Curso JavaScript: 61. DOM: Introducción 07/09/22
+
+//Curso JavaScript: 62. DOM: Nodos, Elementos y Selectores 08/09/22
+
+//Curso JavaScript: 63. DOM: Atributos y Data-Attributes 08/09/22
