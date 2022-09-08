@@ -989,3 +989,7 @@ const persona = {
 //Curso JavaScript: 56. Propiedades Dinámicas de los Objetos 06/09/22
 
 //Curso JavaScript: 57. this - 06/09/22
+
+//Curso JavaScript: 58. call, apply, bind 06/09/22
+
+//Curso JavaScript: 59. JSON 07/09/22
