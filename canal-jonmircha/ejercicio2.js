@@ -1001,3 +1001,5 @@ const persona = {
 //Curso JavaScript: 62. DOM: Nodos, Elementos y Selectores 08/09/22
 
 //Curso JavaScript: 63. DOM: Atributos y Data-Attributes 08/09/22
+
+//Curso JavaScript: 64. DOM: Estilos y Variables CSS 08/09/22
