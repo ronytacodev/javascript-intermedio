@@ -1007,3 +1007,5 @@ const persona = {
 //Curso JavaScript: 65. DOM: Clases CSS 09/09/22
 
 //Curso JavaScript: 66. DOM: Texto y HTML 09/09/22
+
+//Curso JavaScript: 67. DOM Traversing: Recorriendo el DOM 09/09/22
