@@ -1013,3 +1013,8 @@ const persona = {
 //Curso JavaScript: 68. DOM: Creando Elementos y Fragmentos 10/09/22
 
 //Curso JavaScript: 69. DOM: Templates HTML  10/09/22
+
+//Curso JavaScript: 70. DOM: Modificando Elementos (Old Style) 10/09/22
+
+//Curso JavaScript: 71. DOM: Modificando Elementos (Cool Style)  10/09/22
+
