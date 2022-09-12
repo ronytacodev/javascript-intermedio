@@ -1018,3 +1018,7 @@ const persona = {
 
 //Curso JavaScript: 71. DOM: Modificando Elementos (Cool Style)  10/09/22
 
+//Curso JavaScript: 72. DOM: Manejadores de Eventos 11/09/22
+
+
+
