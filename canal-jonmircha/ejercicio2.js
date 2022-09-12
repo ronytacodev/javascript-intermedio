@@ -1020,5 +1020,5 @@ const persona = {
 
 //Curso JavaScript: 72. DOM: Manejadores de Eventos 11/09/22
 
-
+//Curso JavaScript: 73. DOM: Eventos con Parámetros y Remover Eventos 11/09/22
 
