@@ -1025,4 +1025,4 @@ const persona = {
 //MAS DOM
 
 //mas dom
-// aprendiendo de java jsp 13/09/22
+// aprendiendo de java jsp / mysql / apache 13/09/22
