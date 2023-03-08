@@ -1,5 +1,5 @@
-var input=document.querySelectorAll(".campo")
-var div=document.querySelectorAll(".form__div")
+var input=document.querySelectorAll(".login-content__form__item__input")
+var div=document.querySelectorAll(".login-content__form__item")
 input.forEach(function(el, index){
     el.addEventListener("focus", function(){
         if (index==0) {
@@ -13,3 +13,5 @@ input.forEach(function(el, index){
         }
     })
 })
+
+
